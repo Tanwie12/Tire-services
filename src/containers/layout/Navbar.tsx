@@ -95,7 +95,7 @@ const Navbar = () => {
       initial="hidden"
       animate="show"
       id="navbar"
-      className="fixed inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
+      className="fixed md:mb-10 inset-x-0 top-0 right-0 z-50 flex items-end justify-between px-8 py-4 duration-500 md:px-6 xl:px-12 backdrop-blur-lg"
     >
       <h1 className="relative text-2xl capitalize font-signature text-accent group top-1">
         <Link href="/#hero" className="block">

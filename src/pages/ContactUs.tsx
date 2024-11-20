@@ -1,9 +1,12 @@
 
 import React from 'react'
 
-type Props = {}
+type Props = {
+  name: string,
 
-export default function ContactUs({}: Props) {
+}
+
+export default function ContactUs({name}: Props) {
   return (
     <div>ContactUs</div>
   )

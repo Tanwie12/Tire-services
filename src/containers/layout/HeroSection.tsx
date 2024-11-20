@@ -68,7 +68,7 @@ const HeroSection = () => {
       </div>
 
       {/* Additional Section */}
-      <div className="relative py-10 px-6 z-10 mx-20 sm:px-16 lg:px-24 text-black">
+      <div className="relative hidden md:block py-10 px-6 z-10 mx-20 sm:px-16 lg:px-24 text-black">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
           {/* Left Content */}
           <div className="flex flex-col p-10 bg-yellow-300 items-center justify-center">
