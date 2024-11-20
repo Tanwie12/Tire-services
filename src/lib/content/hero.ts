@@ -1,16 +1,14 @@
-import { HeroSectionType } from '@/lib/types/sections';
-import { resumeFileName } from '@/lib/utils/config';
-
-export const heroSection: HeroSectionType = {
-  subtitle: 'Hi, my name is',
-  title: 'vatsal singh.',
-  tagline: 'I create visually pleasing interfaces for the web.',
+export const heroSection = {
+  subtitle: 'Professional Mobile Tire & Brake Services, Anytime, Anywhere',
+  title: 'Fast, Reliable, and Convenient Auto Care at Your Doorstep',
+  tagline: 'Get back on the road quickly with expert tire and brake repairs',
   description:
-    "I'm a passionate Full-Stack web developer with hands-on experience in building web applications using React.js & Next.js with TypeScript, TailwindCSS, and Prisma, with UI/UX designing.",
-  specialText: 'Currently available for freelance',
+    'We provide hassle-free mobile tire and brake services at your home, office, or anywhere you need us. Save time and avoid the stress of visiting a shop.',
+  specialText: 'Available 24/7. Serving the entire city.',
   cta: {
-    title: 'see my resume',
-    url: `/${resumeFileName}`,
-    hideInDesktop: true,
+    title: 'Book an Appointment',
+    url: '#services',
+    hideInDesktop: false,
+    sameTab: true,
   },
 };

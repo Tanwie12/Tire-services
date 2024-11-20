@@ -11,6 +11,7 @@ import { fadeIn, slideIn } from '@/styles/animations';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 /**
  * Hides the navbar while scrolling down
@@ -52,16 +53,21 @@ type NavItemsProps = {
 };
 
 const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
     <motion.li
-      className="group"
+      className={`group ${isActive ? 'text-red-500' : ''}`}
       variants={slideIn({ delay: delay + index / 10, direction: 'down' })}
       initial="hidden"
       animate="show"
     >
       <CLink
         href={href || `/#${children}`}
-        className="block p-2 duration-500 hover:text-accent"
+        className={`block p-2 duration-500 hover:text-accent ${
+          isActive ? 'font-bold' : ''
+        }`}
         onClick={onClick}
         withPadding
       >
@@ -72,7 +78,7 @@ const NavItem = ({ href, children, onClick, index, delay }: NavItemsProps) => {
 };
 
 const Navbar = () => {
-  const { cta, navLinks } = navbarSection;
+  const { navLinks } = navbarSection;
   const [navbarCollapsed, setNavbarCollapsed] = useState(false);
 
   const windowWidth = useWindowWidth();
@@ -120,33 +126,6 @@ const Navbar = () => {
                 {name}
               </NavItem>
             ))}
-
-            <div className="flex items-center justify-between gap-5 xl:gap-6">
-              {cta && (
-                <Button
-                  type="link"
-                  href={cta.url}
-                  sameTab={cta?.sameTab}
-                  variants={slideIn({
-                    delay: ANIMATION_DELAY + navLinks.length / 10,
-                    direction: 'down',
-                  })}
-                  initial="hidden"
-                  animate="show"
-                >
-                  {cta.title}
-                </Button>
-              )}
-              <DarkModeButton
-                onClick={() => setNavbarCollapsed(false)}
-                variants={slideIn({
-                  delay: ANIMATION_DELAY + (navLinks.length + 1) / 10,
-                  direction: 'down',
-                })}
-                initial="hidden"
-                animate="show"
-              />
-            </div>
           </ul>
         </nav>
       )}

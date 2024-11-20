@@ -23,6 +23,7 @@
     --color-dark-1: theme(colors.slate.900);
     --color-dark-2: theme(colors.slate.700);
     --color-dark-3: theme(colors.slate.300);
+    --radius: 0.5rem;
   }
 
   /* Dark Theme */
@@ -60,4 +61,17 @@
 .heading-tertiary,
 .h3 {
   @apply text-xl sm:text-2xl tracking-wide capitalize font-medium text-dark-2;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
 }

@@ -1,29 +1,24 @@
-import About from './About';
+
 import Contact from './Contact';
-import Email from './Email';
-import Experience from './Experience';
-import FeaturedProjects from './FeaturedProjects';
-import Hero from './Hero';
+import Emergency from './layout/Emergency';
 import Footer from './layout/Footer';
+import HeroSection from './layout/HeroSection';
 import Layout from './layout/Layout';
 import Navbar from './layout/Navbar';
-import Projects from './Projects';
-import Skills from './Skills';
-import Social from './Social';
-import SocialLinks from './Social/SocialLinks';
+import Services from './layout/Services'
+import Testimonials from './layout/Testimonials';
+import WhyChooseUs from './layout/whyChooseUs';
+
 
 export {
-  About,
   Contact,
-  Email,
-  Experience,
-  FeaturedProjects,
+  Emergency,
   Footer,
-  Hero,
+  HeroSection,
   Layout,
   Navbar,
-  Projects,
-  Skills,
-  Social,
-  SocialLinks,
+  Services,
+ 
+  Testimonials,
+  WhyChooseUs,
 };
