@@ -5,7 +5,7 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section
-      className="relative mb:20 bg-cover bg-center h-screen"
+      className="relative md:mb-20  bg-cover bg-center h-screen"
       style={{ backgroundImage: 'url("/carContact.jpg")' }} // Replace with your image URL
     >
       {/* Overlay for darkening the background */}
@@ -92,10 +92,13 @@ const HeroSection = () => {
           </div>
 
           {/* Right Content */}
-          <div className="grid bg-white p-10  grid-cols-2 gap-4 text-center">
-            <video className="w-full h-full" controls src="/vanDisplay.mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div className="grid grid-cols-1 bg-white p-10">
+            <video 
+              src="/vanDisplay.mp4"
+              className="w-screen h-full object-cover"
+              controls
+              playsInline
+            />
           </div>
         </div>
       </div>

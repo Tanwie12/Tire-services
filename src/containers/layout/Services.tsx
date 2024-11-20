@@ -47,7 +47,7 @@ const ServiceSection = () => {
     <section id="#services" className="py-16  bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex md:mt-64 justify-between items-center mb-8">
+        <div className="flex md:mt-[20rem] justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800">Quality Services</h2>
           <a
             href="#all-services"
