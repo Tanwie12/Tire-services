@@ -49,7 +49,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <a
-              href="#contact"
+              href="/contact"
               className="inline-block bg-transparent hover:bg-[#F78731] text-white 
                 py-3 sm:py-4 px-8 sm:px-12 rounded-full 
                 text-base sm:text-lg transition-all duration-300 
