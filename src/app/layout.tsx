@@ -1,8 +1,10 @@
 import { seoData } from '@/lib/content/portfolio';
-import ThemeProvider from '@/lib/hooks/use-theme';
 import fontVariables from '@/lib/utils/fonts';
 
-import Cursor from '@/components/ui/Cursor';
+import Footer from '@/containers/layout/Footer';
+import Navbar from '@/containers/layout/Navbar';
+
+import RootLayoutClient from '@/app/RootLayoutClient';
 
 import '../styles/globals.css';
 import type { Metadata } from 'next';
@@ -73,15 +75,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en" className="scroll-smooth">
-      <head>
-        <script src="/scripts/no-flash.js" async />
-      </head>
-      <body className={`text-text bg-bg ${fontVariables}`}>
-        <Cursor className="hidden dark:lg:block" />
-        <ThemeProvider>{children}</ThemeProvider>
-      </body>
-    </html>
-  );
+  return <RootLayoutClient fontVariables={fontVariables}>
+    <Navbar />
+    {children}
+    <Footer />
+    </RootLayoutClient>;
 }

@@ -1,8 +1,6 @@
 import {
   Emergency,
-  Footer,
   HeroSection,
-  Navbar,
   Services,
   Testimonials,
   WhyChooseUs,
@@ -16,7 +14,7 @@ type Props = {
 const Layout = ({ children, className = '' }: Props) => {
   return (
     <>
-      <Navbar />
+     
       <HeroSection />
       <Services />
       {/* <main
@@ -28,7 +26,7 @@ const Layout = ({ children, className = '' }: Props) => {
       <WhyChooseUs />
       <Testimonials />
       <Emergency />
-      <Footer />
+     
       {/* <Social />
       <Email /> */}
     </>

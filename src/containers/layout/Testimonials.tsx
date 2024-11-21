@@ -28,7 +28,13 @@ function Testimonial({ name, role, content, rating, image }: TestimonialProps) {
       <p className="text-gray-600 mb-6">{content}</p>
       <div className="flex items-center">
         <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-          <Image src={image} alt={name} layout="fill" objectFit="cover" />
+          <Image
+            src={image}
+            alt={name}
+            width={150}
+            height={150}
+            className="w-16 h-16 rounded-full object-cover"
+          />
         </div>
         <div>
           <h4 className="font-semibold text-gray-900">{name}</h4>

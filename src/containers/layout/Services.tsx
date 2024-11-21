@@ -47,7 +47,7 @@ const ServiceSection = () => {
     <section id="#services" className="py-16 mx-auto  bg-gray-50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="flex md:mt-[20rem] justify-between items-center mb-8">
+        <div className="flex  justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-gray-800">Quality Services</h2>
           <a
             href="#all-services"
@@ -73,9 +73,10 @@ const ServiceSection = () => {
                 <Image
                   src={service.imageUrl}
                   alt={service.title}
-                  layout="fill"
-                  objectFit="cover"
-                  className="transition-transform duration-300 transform group-hover:scale-110"
+                  width={600}
+                  height={400}
+                  className="w-full h-48 object-cover transition-transform duration-300 transform group-hover:scale-110"
+                  priority
                 />
               </div>
               {/* Content with animated opacity */}

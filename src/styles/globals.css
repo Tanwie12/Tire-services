@@ -3,22 +3,16 @@
 @tailwind utilities;
 
 @layer base {
-  /* Color variables for future use */
   :root {
-    /* --color-bg: #fcfaf8; */
-    /* --color-accent: #14cf93; */
-    /* --color-accent: ##64ffda; */
-    /* --color-accent: #61dafb); */
-    /* --color-text: #383838; */
-    /* --color-dark-2: #282828; */
-    /* --color-dark-3: #a2a2a2; */
-
     /* Light Theme */
     --color-bg: theme(colors.slate.50);
     --color-bg-secondary: theme(colors.white);
-    --color-accent: theme(colors.sky.500);
-    --color-accent-light: theme(colors.sky.500/0.1);
-    --color-accent-torch: theme(colors.blue.700/0.15);
+    --color-accent: #f74231;
+    --color-accent-secondary: #f78731;
+    --color-accent-tertiary: #f76431;
+    --color-accent-quaternary: #f73170;
+    --color-accent-warm: #faa72c;
+    --color-accent-hot: #fa4622;
     --color-text: theme(colors.slate.600);
     --color-dark-1: theme(colors.slate.900);
     --color-dark-2: theme(colors.slate.700);
@@ -28,10 +22,10 @@
 
   /* Dark Theme */
   .dark {
-    --color-bg: theme(colors.slate.900);
+    --color-bg: theme(colors.slate.50);
     --color-bg-secondary: theme(colors.slate.800);
-    --color-accent: theme(colors.sky.400);
-    --color-accent-light: theme(colors.sky.400/0.1);
+    --color-accent: #f74231;
+    --color-accent-light: rgba(247, 66, 49, 0.1);
     --color-text: theme(colors.slate.400);
     --color-dark-1: theme(colors.slate.200);
     --color-dark-2: theme(colors.slate.300);
@@ -74,4 +68,8 @@
 
 .animate-bounce {
   animation: bounce 2s infinite;
+}
+.map-div {
+  flex: 1;
+  background-color: #eee;
 }
