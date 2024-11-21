@@ -16,7 +16,7 @@ const HeroSection = () => {
         <div className="max-w-7xl mx-auto w-full">
           {/* Main Title */}
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight sm:leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl mx-auto lg:mx-0"
+            className="text-3xl sm:text-5xl md:text-5xl lg:text-6xl font-black leading-tight sm:leading-tight md:leading-tight lg:leading-tight mb-6 max-w-4xl mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -31,7 +31,7 @@ const HeroSection = () => {
 
           {/* Description */}
           <motion.p
-            className="text-base sm:text-lg md:text-xl mb-8 max-w-2xl font-light tracking-wide mx-auto lg:mx-0"
+            className="text-base sm:text-xl md:text-xl mb-8 max-w-2xl font-light tracking-wide mx-auto lg:mx-0"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}

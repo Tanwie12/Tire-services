@@ -2,7 +2,7 @@ import { Clock, MapPin, MessageSquare,Phone } from 'lucide-react';
 import React from 'react';
 
 export default function ContactUs() {
-  const whatsappNumber = "12407795349"; // Remove any special characters from phone number
+  const whatsappNumber = "671116769"; // Remove any special characters from phone number
   const whatsappMessage = "Hello! I need assistance with tire or brake service.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -25,10 +25,10 @@ export default function ContactUs() {
             <h3 className="text-xl font-bold mb-2">Call Us</h3>
             <p className="text-gray-600 mb-4">Available 24/7 for emergencies</p>
             <a 
-              href="tel:240-779-5349" 
+              href="tel:671116769" 
               className="text-lg font-semibold text-red-600 hover:text-red-700"
             >
-              240-779-5349
+              671116769
             </a>
           </div>
 
