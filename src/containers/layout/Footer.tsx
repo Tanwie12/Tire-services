@@ -104,7 +104,7 @@ export default function Footer() {
                   href="tel:240-779-5349"
                   className="hover:text-white transition-colors"
                 >
-                  240-779-5349
+                  +1 (240) 779-5349
                 </a>
               </li>
               <li className="flex items-center">
